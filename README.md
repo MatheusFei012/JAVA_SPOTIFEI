@@ -196,4 +196,91 @@ Classes que representam as entidades do sistema de streaming musical, seguindo o
 - Construtores múltiplos (padrão + parametrizado)
 
 
+# 🖥️ Views - Projeto SpotiFei
+
+## Visão Geral
+Telas da aplicação desenvolvidas com Java Swing, seguindo o padrão MVC (Model-View-Controller).
+
+## Telas Implementadas
+
+### 1. `CadastroFrame`
+**Função**: Cadastro de novos usuários  
+**Componentes**:
+- Campos: Nome, Usuário, Senha
+- Botão de cadastro
+
+**Controller**: `ControllerCadastro`
+
+### 2. `CurtidasFrame`  
+**Função**: Gerenciamento de artistas curtidos  
+**Componentes**:
+- Lista de artistas curtidos (HTML)
+- Campo para remover curtidas
+- Botão de descurtir
+
+**Controller**: `ControllerCurtir`
+
+### 3. `ExcluirFrame`  
+**Função**: Remoção de playlists  
+**Componentes**:
+- Campo para nome da playlist
+- Botão de exclusão
+
+**Controller**: `ControllerExcluir`
+
+### 4. `HistoricoFrame`  
+**Função**: Visualização do histórico  
+**Componentes**:
+- Lista dos últimos 10 itens reproduzidos
+- Botão de atualização
+
+**Controller**: `ControllerHistorico`
+
+### 5. `InicioFrame`  
+**Função**: Menu principal  
+**Componentes**:
+- Botões de navegação para todas as funcionalidades
+
+### 6. `LoginFrame`  
+**Função**: Autenticação de usuários  
+**Componentes**:
+- Campos: Usuário e Senha
+- Botões: Login e Cadastro
+
+**Controller**: `ControllerLogin`
+
+### 7. `OuvirFrame`  
+**Função**: Reprodução de conteúdo  
+**Componentes**:
+- Lista de artistas
+- Lista de playlists
+- Controle de exclusão
+
+**Controller**: `ControllerOuvir`
+
+### 8. `PesquisaFrame`  
+**Função**: Busca e ações relacionadas  
+**Componentes**:
+- Campo de pesquisa
+- Botões: Buscar, Adicionar, Curtir
+- Área de resultados
+
+**Controller**: `ControllerPesquisa`
+
+### 9. `PlaylistFrame`  
+**Função**: Criação de playlists  
+**Componentes**:
+- Campos: Nome, 5 músicas, usuário
+- Botão de adição
+
+**Controller**: `ControllerPlaylist`
+
+## Padrões Utilizados
+- MVC (Separação clara entre View e Controller)
+- Java Swing para interface gráfica
+- Injeção de dependência nos controllers
+- Components customizados com herança de JFrame
+
+
+
 
