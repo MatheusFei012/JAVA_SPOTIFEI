@@ -132,3 +132,68 @@ Controladores responsáveis pela lógica de negócio e comunicação entre Views
 - Try-with-resources (auto-close connections)
 
 
+# 📦 Model Classes - Projeto SpotiFei
+
+## Visão Geral
+Classes que representam as entidades do sistema de streaming musical, seguindo o padrão Java Beans com getters/setters.
+
+## Modelos Implementados
+
+### 1. `Cliente`
+**Atributos**:
+- `nome` (String)
+- `usuario` (String) 
+- `senha` (String)
+
+**Métodos**:
+- Construtores padrão e parametrizado
+- Getters e setters para todos atributos
+
+### 2. `Curtir`  
+**Atributo**:
+- `nome` (String) - Nome do artista curtido
+
+**Métodos**:  
+- Construtores padrão e com parâmetro
+- Getter/setter padrão
+
+### 3. `Historico`  
+**Atributo**:
+- `nome` (String) - Item do histórico
+
+**Métodos**:
+- Construtores básicos
+- Acesso controlado ao atributo
+
+### 4. `Ouvir`  
+**Atributo**:  
+- `nome` (String) - Artista/playlist a ser ouvida
+
+**Características**:
+- Modelo simples com operações básicas
+
+### 5. `Pesquisa`  
+**Atributo**:
+- `nome` (String) - Termo pesquisado
+
+**Métodos**:
+- Implementação Java Beans padrão
+
+### 6. `Playlist`  
+**Atributos**:
+- `nome` (String)
+- `musica1` a `musica5` (String) 
+- `usuario` (String)
+
+**Métodos**:
+- Construtores completos
+- Getters/setters para todas músicas
+- Controle de usuário associado
+
+## Padrões Utilizados
+- Java Beans (atributos privados + getters/setters)
+- Encapsulamento rigoroso
+- Construtores múltiplos (padrão + parametrizado)
+
+
+
